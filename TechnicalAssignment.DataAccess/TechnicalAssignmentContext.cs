@@ -138,7 +138,7 @@ public class TechnicalAssignmentContext(DbContextOptions options) : DbContext(op
 			new()
 			{
 				Id = 1,
-				CityId = 1,
+				CityId = 3,
 				StartTime = new TimeOnly(6,00),
 				EndTime = new TimeOnly(6,29),
 				Amount = 8
@@ -146,7 +146,7 @@ public class TechnicalAssignmentContext(DbContextOptions options) : DbContext(op
 			new()
 			{
 				Id = 2,
-				CityId = 1,
+				CityId = 3,
 				StartTime = new TimeOnly(6,30),
 				EndTime = new TimeOnly(6,59),
 				Amount = 13
@@ -154,10 +154,66 @@ public class TechnicalAssignmentContext(DbContextOptions options) : DbContext(op
 			new()
 			{
 				Id = 3,
-				CityId = 1,
+				CityId = 3,
 				StartTime = new TimeOnly(7,00),
 				EndTime = new TimeOnly(7,59),
 				Amount = 18
+			},
+			new()
+			{
+				Id = 4,
+				CityId = 3,
+				StartTime = new TimeOnly(8,00),
+				EndTime = new TimeOnly(8,29),
+				Amount = 13
+			},
+			new()
+			{
+				Id = 5,
+				CityId = 3,
+				StartTime = new TimeOnly(8,30),
+				EndTime = new TimeOnly(14,59),
+				Amount = 8
+			},
+			new()
+			{
+				Id = 6,
+				CityId = 3,
+				StartTime = new TimeOnly(15,00),
+				EndTime = new TimeOnly(15,29),
+				Amount = 13
+			},
+			new()
+			{
+				Id = 7,
+				CityId = 3,
+				StartTime = new TimeOnly(15,30),
+				EndTime = new TimeOnly(16,59),
+				Amount = 18
+			},
+			new()
+			{
+				Id = 8,
+				CityId = 3,
+				StartTime = new TimeOnly(17,00),
+				EndTime = new TimeOnly(17,59),
+				Amount = 13
+			},
+			new()
+			{
+				Id = 9,
+				CityId = 3,
+				StartTime = new TimeOnly(18,00),
+				EndTime = new TimeOnly(18,29),
+				Amount = 8
+			},
+			new()
+			{
+				Id = 10,
+				CityId = 3,
+				StartTime = new TimeOnly(18,30),
+				EndTime = new TimeOnly(5,59),
+				Amount = 0
 			}
 		});
 
