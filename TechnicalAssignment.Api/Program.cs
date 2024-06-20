@@ -1,7 +1,9 @@
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Sieve.Services;
 using TechnicalAssignment.Business.Businesses;
 using TechnicalAssignment.Business.Contract;
+using TechnicalAssignment.Common.Validators;
 using TechnicalAssignment.DataAccess;
 using TechnicalAssignment.DataAccess.Contract;
 using TechnicalAssignment.Model.Entities;
@@ -14,6 +16,7 @@ builder.Services.AddControllers()
 	.AddSwaggerGen()
 	.AddScoped<ISieveProcessor, SieveProcessor>()
 	.AddScoped<IUnitOfWork, UnitOfWork>()
+	.AddValidatorsFromAssemblyContaining<TaxValidator>()
 	.AddScoped<IBaseBusiness<Tax>, TaxBusiness>()
 	.AddScoped<IBaseBusiness<ExemptedDate>, ExemptedDateBusiness>()
 	.AddScoped<IBaseBusiness<Rate>, RateBusiness>()
